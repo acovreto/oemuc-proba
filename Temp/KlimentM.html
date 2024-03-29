@@ -14,7 +14,35 @@
         .roboto-bold-italic {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
-        font-style: italic;
+        font-style: italic; }
+
+        div.container{
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid gray;
+            position: relative; /* Added position relative for absolute positioning */
+        }
+        div.centeredDiv{
+            position: absolute;
+            width: 50vw;
+            height: 20vh;
+            z-index: 1;
+        }
+        .center {
+            margin: 50%;
+            border: 3px solid red;
+        }
+        img.InheritContainer{
+            height: inherit; 
+            width: inherit;
+            opacity: 0;
+            transition: opacity 0.5s cubic-bezier(0.51, 0.13, 0.44, 0.87);
+        }
+        .fadeIn{
+            opacity: 1 !important;
         }
     </style>
 
@@ -23,6 +51,41 @@
     <title>Document</title>
 </head>
 <body>
-    <p class="roboto-bold-italic">Hello world</p>
+    
+
+
+    <div class="container">
+        <div class="center centeredDiv">
+            TEXT
+        </div>
+
+        <img id="myImage" class="InheritContainer" src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg" alt="">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var imageIndex = 1;
+            var imgInterval = 3000;
+            var images = [
+                'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
+                'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+                'https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg'
+            ];
+
+            function changeImage() {
+                var imageContainer = document.getElementById('myImage');
+                imageContainer.style.opacity = 0;
+                setTimeout(function() {
+                    imageContainer.src = images[imageIndex];
+                    imageContainer.style.opacity = 1;
+                    imageIndex = (imageIndex + 1) % images.length;
+                }, 500);
+            }
+
+
+            changeImage();
+            setInterval(changeImage, imgInterval);
+            });
+    </script>
 </body>
 </html>
