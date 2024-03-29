@@ -20,7 +20,7 @@ Oemuc stranica za masum.
 
 ## Font
 
-- Vo <Head></Head>
+- Vo head vo html file
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
