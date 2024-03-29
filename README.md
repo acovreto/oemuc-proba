@@ -1,8 +1,8 @@
 <div align="center">
 
-# Oemuc Stranica
+### Oemuc Stranica
 
-Oemuc stranica za masum.
+###### Oemuc stranica za masum.
 
 </div>
 
@@ -28,6 +28,8 @@ Oemuc stranica za masum.
 ## Font
 
 - Vo head vo html file
+
+[comment]: # "rabotit fontot bez prvite dve link tagovi, sho se so preconnet"
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -113,4 +115,3 @@ Oemuc stranica za masum.
   font-style: italic;
 }
 ```
-
