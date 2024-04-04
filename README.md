@@ -43,6 +43,10 @@
 - vo CSS file
 
 ```css
+*{
+    font-family: "Roboto", sans-serif;
+}
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
