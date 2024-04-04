@@ -21,7 +21,7 @@
 | ----------- | ---------------------------------------------------------------- |
 | Sina        | ![#08a4ac](https://via.placeholder.com/10/08a4ac?text=+) #08a4ac |
 | Portokaleva | ![#f39520](https://via.placeholder.com/10/f39520?text=+) #f39520 |
-| Mat-Crna    | ![#52123](https://via.placeholder.com/10/52123?text=+) #52123    |
+| Mat-Crna    | ![#252123](https://via.placeholder.com/10/52123?text=+) #252123    |
 
 </div>
 
