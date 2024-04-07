@@ -1,0 +1,102 @@
+:root{
+    --sina: #08a4ac;
+    --portokaleva: #f39520;
+    --matCrna: #252123;
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.grupa{
+    display: grid;
+    grid-template-rows: 100px; 
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+    grid-row-gap: 300px;
+    grid-column-gap: 200px;
+    justify-content: center;
+    align-content: center;
+    margin: 200px;
+    margin-bottom: 250px;
+}
+
+.korisnik{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+    transition-property: transform, opacity;
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out;
+}
+.korisnik img{
+    width: 220px;
+    height: 330px;
+    border-radius: 35px;  
+}
+.korisnik h1{
+    color: white;
+    background-color: var(--sina);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    transform: translateY(150px);
+    text-wrap: nowrap;
+
+    transition-property: transform;
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out;
+}
+.korisnik:hover{
+    transform: translateY(-25px);
+}
+.korisnik:hover h1{
+    transform: translateY(180px);
+}
+.korisnik:hover #dvePreziminja{
+    transform: translateY(180px);
+}
+.korisnik.active{
+    opacity: 1;
+}
+
+.sektor{
+    margin-top: 100px;
+    color: var(--matCrna);
+    border-bottom: 10px solid var(--portokaleva);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 50%;
+    border-bottom-width: 20px;
+    display: inline-block;
+    padding: 30px;
+    text-transform: uppercase;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out;
+}
+.sektor.active{
+    opacity: 1;
+}
+
+#dvePreziminja{
+    transform: translateY(150px);
+}
