@@ -8,17 +8,12 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
-        #carouselContainer {
-        height: 80%;
-        width: 100%;
-        position: fixed;
-        }
 
         #carouselContainer .carousel-wrapper,
         #hero-carousel {
-        height: 100%;
+        height: 95%;
         width: 100%;
-        position: absolute;
+        position: relative;
         }
 
         #carouselContainer{
@@ -26,7 +21,7 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            height: 80vh;
+            height: 90vh;
             object-fit: cover;
             image-rendering: crisp-edges;
         }
@@ -113,9 +108,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>carousel</title>
 </head>
 <body>
+    <div style="width: 100vw; height: 50px; background-color: red; position: relative;">
+        NAVBAR
+    </div>
+
     <div id="carouselContainer">
 
         <div class="TextDiv">
@@ -126,27 +125,32 @@
           <div id="hero-carousel" class="carousel slide carousel-fade indicators-fade">
 
             <ol class="carousel-indicators indicators-fade">
-              <li data-target="#hero-carousel" data-slide-to="0" class="active indicatorElement"></li>
+              <li data-target="#hero-carousel" data-slide-to="0" class="indicatorElement active"></li>
               <li data-target="#hero-carousel" data-slide-to="1" class="indicatorElement"></li>
               <li data-target="#hero-carousel" data-slide-to="2" class="indicatorElement"></li>
               <li data-target="#hero-carousel" data-slide-to="3" class="indicatorElement"></li>
-    
             </ol>
 
             <div class="carousel-inner">
               <div class="item active"> <!-- Prv element -->
-                <img src="https://scontent.fskp4-1.fna.fbcdn.net/v/t1.6435-9/169461832_4172567809449743_2244895854421425876_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=9Tv0xnB1DesAb5RlFq0&_nc_ht=scontent.fskp4-1.fna&oh=00_AfBda7Bz8ZV5j2VQcq6jL_UjYdkXtCr7XkrfMbU4iUQI7w&oe=663CDBB8">
+                <img id="item1" src="https://scontent.fskp4-1.fna.fbcdn.net/v/t1.6435-9/169461832_4172567809449743_2244895854421425876_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=9Tv0xnB1DesAb5RlFq0&_nc_ht=scontent.fskp4-1.fna&oh=00_AfBda7Bz8ZV5j2VQcq6jL_UjYdkXtCr7XkrfMbU4iUQI7w&oe=663CDBB8">
               </div>
 
-              <div class="item"><img src="https://tvm.mk/wp-content/uploads/2022/11/oemuc.jpg"></div>
-              <div class="item"><img src="https://emucohrid.edu.mk/wp-content/uploads/2024/03/Ekologija9-840x430.jpg"></div>
-              <div class="item"><img src="https://emucohrid.edu.mk/wp-content/uploads/2024/03/Ekologija9-840x430.jpg"></div>
+              <div class="item"><img id="item2" src="https://tvm.mk/wp-content/uploads/2022/11/oemuc.jpg"></div>
+              <div class="item"><img id="item3" src="https://emucohrid.edu.mk/wp-content/uploads/2024/03/Ekologija9-840x430.jpg"></div>
+              <div class="item"><img id="item4" src="https://emucohrid.edu.mk/wp-content/uploads/2024/03/Ekologija9-840x430.jpg"></div>
+
         </div>
       </div>
+    </div>
+
+    <div style="width: 100vw; height: 50px; background-color: red; position: relative;">
+        DIV2Nav
+    </div>
+
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
       <script>
         $(document).ready(function(){
             setInterval(function(){
