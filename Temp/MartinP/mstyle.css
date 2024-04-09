@@ -1,0 +1,133 @@
+:root {
+  --background1: #2c3032; /* prashaj go antonija za da se ista boja nav i footer */
+  --background2: #2a2e2f;
+  --backgroundhover1: #464a4c;
+  --text1: #b6b0a6;
+  --text2: #9e9689;
+  --linktxt: #e8e6e3;
+}
+#epos {
+  padding: 20px;
+  height: 50vh;
+  background-color: var(--background1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dugminjagore {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.stvari1 {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#stvari2 {
+  height: 100%;
+  align-content: center;
+}
+.naslovche {
+  color: var(--text1);
+  font-size: 5rem;
+}
+
+.footer {
+  --cardspace-y: 1rem;
+  --cardspace-x: 1rem;
+  --zadolu-y: 0.5rem;
+  --zadolu-x: 1rem;
+  background-clip: border-box;
+  background-color: var(--background2);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.ftelo {
+  flex: 1 1 auto;
+  padding: var(--cardspace-y) var(--cardspace-x);
+}
+.ftelo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: blue;*/
+  height: 5vh;
+}
+
+.dugminja {
+  display: flex;
+  justify-content: space-evenly;
+  justify-self: center;
+  /*background-color: red;*/
+  width: 50vh;
+  height: 5.2vh;
+  overflow: hidden;
+  padding: 10px;
+}
+.btn {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--background2);
+  font-weight: 500;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
+  font-size: 25px;
+  color: var(--linktxt);
+  overflow: hidden;
+  text-align: center;
+  align-content: center;
+  transition: background-color 0.5s ease-in-out;
+}
+.btn:hover {
+  background-color: #464a4c;
+  color: var(--linktxt);
+  transition: background-color 0.5s ease;
+}
+.btn2 {
+  border-radius: 5px;
+  background-color: var(--background2);
+  font-weight: 500;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
+  font-size: 19px;
+  color: var(--linktxt);
+  text-align: center;
+  align-content: center;
+  transition: background-color 0.5s ease-in-out;
+}
+.btn2:hover {
+  background-color: #464a4c;
+  color: var(--linktxt);
+  transition: background-color 0.5s ease;
+}
+.najdolu {
+  padding: var(--zadolu-y) var(--zadolu-x);
+  text-align: center;
+  color: var(--text1);
+  background-color: var(--background2);
+}
+/* copy write msg*/
+.cwmsg {
+  font-size: 12px;
+  color: var(--text2);
+}
+.linkoj {
+  text-decoration: none;
+  color: var(--linktxt);
+}
+.linkoj:hover {
+  text-decoration: underline;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
