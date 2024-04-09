@@ -15,6 +15,15 @@ html, body{
     max-width: 100%;
     overflow-x: hidden;
 }
+.pozadina{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 102%;
+    filter: blur(10px);
+}
 
 .grupa{
     display: grid;
@@ -45,7 +54,7 @@ html, body{
     width: 220px;
     height: 330px;
     border-radius: 35px;  
-    box-shadow: 10px 10px 30px black;
+    box-shadow: 1px 1px 5px black;
 }
 .korisnik h1{
     color: white;
@@ -79,7 +88,7 @@ html, body{
 
 .sektor{
     margin-top: 100px;
-    color: var(--matCrna);
+    color: var(--portokaleva);
     border-bottom: 10px solid var(--portokaleva);
     margin-left: 50%;
     transform: translateX(-50%);
@@ -90,6 +99,8 @@ html, body{
     padding: 30px;
     text-transform: uppercase;
     opacity: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 
     transition-property: opacity;
     transition-duration: 0.3s; 
