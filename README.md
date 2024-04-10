@@ -121,4 +121,4 @@
 
 ```
 ## Kristijan dodaj link od stranava pod ova 
--(https://massum.netlify.app)
+- https://massum.netlify.app
