@@ -42,6 +42,11 @@ html, body{
     gap: 100px;
     justify-content: space-between;
     box-shadow: 1px 1px 5px black;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out;
 }
 .struka h1{
     color: var(--portokaleva);
@@ -87,6 +92,9 @@ html, body{
 }
 .struka button:hover a{
     color: var(--portokaleva);
+}
+.struka.active{
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1400px) {
