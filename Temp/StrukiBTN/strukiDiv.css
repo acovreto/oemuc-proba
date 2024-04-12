@@ -1,0 +1,102 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
+
+    .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    *{
+        margin: 0;
+    }
+
+    .SD_Background{
+        width: 100%;
+        height: 60vh;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: #e0e0e0;
+        width: 100%;
+        height: 60vh;
+        position: relative;
+
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .SD_container{
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        display: flex;
+        flex-direction: row;
+        width: inherit;
+        height: inherit;
+
+    }
+
+    .SD_StrukaContainer{
+        width: 24.25%; 
+        height: 100%;
+        overflow: hidden;
+    }
+    .SD_StrukaContainer:nth-child(1){
+        background-color: #f2951e;
+    }   
+    .SD_StrukaContainer:nth-child(2){
+        background-color: #00a4ac;
+    }   
+    .SD_StrukaContainer:nth-child(3){
+        background-color: #f23824;
+    }   
+    .SD_StrukaContainer:nth-child(4){
+        background-color: #e948ae;
+    }   
+
+    .SD_BoxAnimation{
+        transition: cubic-bezier(.48,.67,.57,.92) 0.5s;
+
+    }
+    .SD_BoxAnimation:hover{
+        transform: translate(0px, -30px);
+        box-shadow: 0px 21px 8px -5px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0px 21px 8px -5px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 21px 8px -5px rgba(0,0,0,0.2);
+    }
+
+    .SD_icoBox{
+        width: 100%;
+        height: 30%;
+    }
+    .SD_ico{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .SD_TextDiv{
+        height: 100%;
+        width: 95%;
+        position: relative;
+        margin-top: 10%;
+
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .centerText{
+        text-align: center;
+    }
+
+    .SC_Text{
+        color: white;
+    }
+    .SC_Text ol{
+        list-style: disc;
+        font-size: 40;
+        
+    }

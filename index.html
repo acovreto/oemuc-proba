@@ -10,6 +10,9 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />  
     </section>
 
+    <!-- za struki -->
+    <link rel="stylesheet" href="Temp/StrukiBTN/strukiDiv.css">
+
     <!-- Za carousel -->
     <section>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -21,11 +24,13 @@
       <link rel="stylesheet" href="../Temp/SponzoriRes/sponzori.css">
     </section>
 
+    <section>
+      <script type="module" src='https://unpkg.com/html-include-element'></script>
+    </section>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    
 </head>
 <body> 
 
@@ -90,6 +95,92 @@
         </div>
     </div>
     </section>
+
+    <section>
+      <div class="SD_Background">
+        <div class="SD_container">
+            <!-- Elekronika -->
+            <div class="SD_BoxAnimation SD_StrukaContainer clickable-div" data-href="Temp/Kristijan/index-elektro.html">
+                <div class="SD_icoBox">
+                    <img class="SD_ico" src="Temp/StrukiBTN/Icons/LaptopIco.png">
+                </div>
+                <div class="SD_TextDiv roboto-regular SC_Text">
+                    <p class="centerText" style="font-size: x-large;"><b>Електротехничка Струка:</b></p> <br>
+                    <ol>
+                        <li>Техничар за индустриска мехатроника</li>
+                        <li>Електротехничар енергетичар</li>
+                        <li>Електротехничар за електроника и телекомуникации</li>
+                        <li>Електротехничар за компјутерска техника и автоматика</li>
+                    </ol> <br>
+                    <p class="centerText" style="font-size: x-large;"><b>Профил за тригодишно образование:</b></p>
+                    <ol>
+                        <li>Електротехничар</li>
+                        <li>Електротехничар за електронска и телекомуникации</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Masinska -->
+            <div class="SD_BoxAnimation SD_StrukaContainer clickable-div" data-href="Temp/Kristijan/index-masinska.html">
+                <div class="SD_icoBox">
+                    <img class="SD_ico" src="Temp/StrukiBTN/Icons/Cog.png">
+                </div>
+                <div class="SD_TextDiv roboto-regular SC_Text">
+                    <p class="centerText" style="font-size: x-large;"><b>Машинска Струка:</b></p> <br>
+                    <ol>
+                        <li>Техничар за индустриска мехатроника</li>
+                        <li>Техничар за производно машинство</li>
+                        <li>Машински техничар</li>
+                        <li>Машинско-енергетски техничар</li>
+                        <li>Машински техничар за моторни возила</li>
+                        <li>Техничар за компјутерско управување</li>
+                    </ol> <br>
+                    <p class="centerText" style="font-size: x-large;"><b>Профил за тригодишно образование:</b></p>
+                    <ol>
+                        <li>Заварувач</li>
+                        <li>Обработувач на метал</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Sobrajkajno -->
+            <div class="SD_BoxAnimation SD_StrukaContainer clickable-div" data-href="Temp/Kristijan/index-soobrajkanjo.html">
+                <div class="SD_icoBox">
+                    <img class="SD_ico" src="Temp/StrukiBTN/Icons/CarIcon.png">
+                </div>
+                <div class="SD_TextDiv roboto-regular SC_Text">
+                    <p class="centerText" style="font-size: x-large;"><b>Сообраќајна струка:</b></p> <br>
+                    <ol>
+                        <li>Техничар за патен сообрајќај</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Licni uslugi -->
+            <div class="SD_BoxAnimation SD_StrukaContainer clickable-div" data-href="Temp/Kristijan/index-licni-uslugi.html">
+                <div class="SD_icoBox">
+                    <img class="SD_ico" src="Temp/StrukiBTN/Icons/People.png">
+                </div>
+                <div class="SD_TextDiv roboto-regular SC_Text">
+                    <p class="centerText" style="font-size: x-large;"><b>Лични услуги:</b></p> <br>
+                    <ol>
+                        <li>Техничар за козметичка нега и убавина</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $(".clickable-div").click(function(){
+              window.location = $(this).data("href");
+          });
+      });
+  </script>
     
 </body>
 </html>
