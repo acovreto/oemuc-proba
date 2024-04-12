@@ -120,5 +120,14 @@
 }
 
 ```
-## Kristijan dodaj link od stranava pod ova 
-- https://massum.netlify.app
+## Include element
+Head:
+```html
+  <section>
+    <script type="module" src='https://unpkg.com/html-include-element'></script>
+  </section>
+```
+Body
+```html
+  <html-include src="Link"></html-include>
+```
