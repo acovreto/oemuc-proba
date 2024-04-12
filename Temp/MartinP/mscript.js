@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         stvari.innerHTML = data;
         stvari.classList.add("show");
-      })
-      .catch((error) => console.error("Error fetching window1.html:", error));
+      });
   });
 
   btn2.addEventListener("click", () => {
@@ -20,17 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         stvari.innerHTML = data;
         stvari.classList.add("show");
-      })
-      .catch((error) => console.error("Error fetching window2.html:", error));
+      });
   });
 
   btn3.addEventListener("click", () => {
-    fetch("./pages/sezap.html")
+    fetch("./pages/praz.html")
       .then((response) => response.text())
       .then((data) => {
         stvari.innerHTML = data;
         stvari.classList.add("show");
-      })
-      .catch((error) => console.error("Error fetching window2.html:", error));
+      });
   });
 });
