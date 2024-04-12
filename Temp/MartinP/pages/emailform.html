@@ -4,8 +4,6 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../mstyle.css" />
-    <!--samo ovaj file my trebit ovaj dep ^-->
     <!--drugite dva filea vo ./pages ne im trebit isto taka na sendmail.php i mscript.js ne im trebit nikakvi deps-->
     <!--ova go veljam zhsh da ne imat belja vo file paths-->
     <link
@@ -13,6 +11,14 @@
       rel="stylesheet"
     />
     <style>
+      :root {
+        --background1: #252123;
+        --background2: #201f1e;
+        --backgroundhover1: #464a4c;
+        --text1: #b6b0a6;
+        --text2: #9e9689;
+        --linktxt: #e8e6e3;
+      }
       input[type="text"],
       select,
       textarea {
@@ -39,6 +45,7 @@
         align-content: center;
         transition: background-color 0.5s ease-in-out;
         border: none;
+        width: 6%;
       }
       input[type="submit"]:hover {
         background-color: #464a4c;
@@ -52,12 +59,20 @@
       }
       .title {
         color: var(--text1);
-        font-size: 6vh;
+        font-size: 4vh;
       }
       * {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"] {
+        width: 30%;
       }
     </style>
   </head>
@@ -65,7 +80,7 @@
     <div class="epocon">
       <form action="../sendmail.php" method="post">
         <label class="roboto-regular title" for="name"
-          >Изпрати нам еписмо!</label
+          >Испратете ни еписмо</label
         >
         <input
           id="name"
@@ -89,10 +104,10 @@
           name="message"
           required
           placeholder="Вашето писмо"
-          style="height: 150px"
+          style="height: 150px; width: 30%"
         ></textarea>
 
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Изпратете" />
       </form>
     </div>
   </body>

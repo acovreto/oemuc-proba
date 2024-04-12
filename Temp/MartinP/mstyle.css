@@ -1,6 +1,6 @@
 :root {
-  --background1: #2c3032; /* prashaj go antonija za da se ista boja nav i footer */
-  --background2: #2a2e2f;
+  --background1: #252123;
+  --background2: #201f1e;
   --backgroundhover1: #464a4c;
   --text1: #b6b0a6;
   --text2: #9e9689;
@@ -12,6 +12,10 @@
   background-color: var(--background1);
   display: flex;
   flex-direction: column;
+}
+ol {
+  list-style: none;
+  text-align: center;
 }
 
 .dugminjagore {
@@ -90,20 +94,6 @@
   color: var(--linktxt);
   transition: background-color 0.5s ease;
 }
-.btn2 {
-  border-radius: 5px;
-  background-color: var(--background2);
-  font-weight: 500;
-  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
-  font-size: 19px;
-  color: var(--linktxt);
-  text-align: center;
-  align-content: center;
-  transition: background-color 0.5s ease-in-out;
-  border: none;
-}
 .btn2:hover {
   background-color: #464a4c;
   color: var(--linktxt);
@@ -114,6 +104,8 @@
   text-align: center;
   color: var(--text1);
   background-color: var(--background2);
+  align-content: center;
+  font-size: 1.1rem;
 }
 /* copy write msg*/
 .cwmsg {
