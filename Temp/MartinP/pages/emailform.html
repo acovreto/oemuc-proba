@@ -45,6 +45,7 @@
         align-content: center;
         transition: background-color 0.5s ease-in-out;
         border: none;
+        width: 6%;
       }
       input[type="submit"]:hover {
         background-color: #464a4c;
@@ -58,12 +59,20 @@
       }
       .title {
         color: var(--text1);
-        font-size: 6vh;
+        font-size: 4vh;
       }
       * {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"] {
+        width: 30%;
       }
     </style>
   </head>
@@ -95,10 +104,10 @@
           name="message"
           required
           placeholder="Вашето писмо"
-          style="height: 150px"
+          style="height: 150px; width: 30%"
         ></textarea>
 
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Изпратете" />
       </form>
     </div>
   </body>
