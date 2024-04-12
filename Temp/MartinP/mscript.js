@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   btn2.addEventListener("click", () => {
-    fetch("./pages/conactpage.html")
+    fetch("./pages/contactpage.html")
       .then((response) => response.text())
       .then((data) => {
         stvari.innerHTML = data;

@@ -4,8 +4,6 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../mstyle.css" />
-    <!--samo ovaj file my trebit ovaj dep ^-->
     <!--drugite dva filea vo ./pages ne im trebit isto taka na sendmail.php i mscript.js ne im trebit nikakvi deps-->
     <!--ova go veljam zhsh da ne imat belja vo file paths-->
     <link
@@ -13,6 +11,14 @@
       rel="stylesheet"
     />
     <style>
+      :root {
+        --background1: #252123;
+        --background2: #201f1e;
+        --backgroundhover1: #464a4c;
+        --text1: #b6b0a6;
+        --text2: #9e9689;
+        --linktxt: #e8e6e3;
+      }
       input[type="text"],
       select,
       textarea {
@@ -65,7 +71,7 @@
     <div class="epocon">
       <form action="../sendmail.php" method="post">
         <label class="roboto-regular title" for="name"
-          >Изпрати нам еписмо!</label
+          >Испратете ни еписмо</label
         >
         <input
           id="name"
