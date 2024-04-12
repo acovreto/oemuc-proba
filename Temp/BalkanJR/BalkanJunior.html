@@ -59,9 +59,10 @@
 
         .BJ_ContainerMain{
             margin-top: 2%;
+            margin-bottom: 2%;
             position: relative;
             width: 100%; 
-            height: 100vh;
+            height: 245vh;
         }
         .BJ_ContainerInner{
             background-color: white;
@@ -87,9 +88,7 @@
 
         .flagContainer{
             position: relative;
-            
         }
-
 
         .FlagImage {
         filter: blur(0);
@@ -118,13 +117,24 @@
             width: 100%; 
             font-size: xx-large;
         }
+
+        .logoDiv{
+            position: absolute;
+            width: 100%;
+            height: 200vh;
+        }
+        .logoBJ{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
     </style>
 </head>
 <body>
     <img src="../CarouselRes/Imgs/Cousel1.png" alt="ОЕМУЦ" class="pozadina">
 
     <!-- navbar -->
-    <section style="color: wheat;">
+    <section style="color: red; text-align: center;">
         Navbar here
     </section>
 
@@ -140,7 +150,7 @@
             </div>
             <hr class="HR_FancyStyle">
             <p class="textDiv CenterText roboto-regular" style="font-size: xx-large;">Училишта и држави учесници на натпреварот:</p>
-            <div class="FlexedGrid">
+            <div class="FlexedGrid" style="margin-bottom: 5%;">
                 <div class="flagContainer">
                     <img src="Flags/Macedonia.png" class="FlagImage">
                     <p class="CenterText centerDiv roboto-regular FlagText flagParagraphStyles">Република Македонија,   ОЕМУЦ „Св. НАУМ ОХРИДСКИ“, Охрид</p>
@@ -179,18 +189,46 @@
                 <div class="flagContainer">
                     <img src="Flags/Romania.webp" class="FlagImage">
                     <p class="CenterText centerDiv roboto-regular FlagText flagParagraphStyles">Романија,   COLEGIUL TEHNIC “TOMIS”, Констанца</p>
-                </div>
-                
+                </div>   
+            </div>
 
+            <hr class="HR_FancyStyle">
+            <div class="textDiv roboto-regular">
+                <p>
+                    Проектот “Балкан Јуниор” настана како идеја да се поврзат училишта од слични профили од различни држави од Балканот. Идеја започна во 2012 година од страна на Бранко Голоскоковић, директор на Техничкото училиште од Ваљево, и Фатих Камил Билгин, директорот на училиштето INONU MTAL од Истанбул. Натпреварувањето “Балкан Јуниор” до сега се одржуваше во:
+                </p>
+                <br>
+                <pre style="text-wrap: wrap; text-indent: 2px;">
+                    <ul style="margin-left: 5%;">
+                        <li>2013 година Турција- Истанбул</li>
+                        <li>2014 година Словенија – Велење</li>
+                        <li>2015 година Црна Гора – Никшиќ</li>
+                        <li>2016 година Србија – Ваљево (Учесници Филип Милошески и Јован Цветкоски под менторство на професорите Владо Јанкулоски и Раде Јанчески. Освоено III место)</li>
+                        <li>2017 година Босна и Херцеговина – Тешањ (Учесници Дејан Јанески и Иван Јузмески под менторство на професорите Владо Јанкулоски и Борис Стрезоски. Освоено IV место)</li>                    
+                        <li>2018 година Хрватска – Лабин (Учесници Бојан Јованоски и Филип Спростран под менторство на професорите Владо Јанкулоски и Љупчо Балески. Освоено IV место)</li>
+                        <li>2019 година Македонија – Охрид (Учесници Надица Кузманоска и Александар Лазароски под менторство на професорите Владо Јанкулоски и Љупчо Балески. Освоено III место)</li>
+                        <li>2022 година Романија – Констанца (Учесници Мухамед Асан и Петар Цаноски под менторство на професорите Владо Јанкулоски и Љупчо Балески. Освоено I место)</li>
+                        <li>2023 година Црна Гора – Никшиќ (Учесници Бојан Петроски и Наум Алачоски под менторство на професорите Наташа Јанковска Китани и Ангеле Буџакоски. Освоено I место)</li>
+                    </ul>
+                </pre>
+                <p>
+                    Соработката меѓу училиштата се темели на размена на знаење, искуства и средства за извршување на практични задачи, базирани на повеќегодишното работење на просветните работници од областа на напредните технологии кои се неопходни за современ работен пазар (електротехника, машинство и информатика).
+                </p>
+                <p>
+                    Досегашните натпревари ги опфатија областите од управувањето со CNC машините, програмирањето на PLC, работењето на 3D печатач, реализација на електро-пневматски систем управуван со PLC и микропроцесорот за програмирање и контрола на возила со помош на микроконтролери и контрола на сумо робот.
+                </p>
+                <p>
+                    Честа да биде домаќин на седмото интернационално натпреварување “Балкан Јуниор” ја имаше Општинскиот Електромашински Училиштен Центар „Св. Наум Охридски“ од Охрид, а натпреварот  се одржа од 02 до 05. мај 2019 година .
+                </p>
+
+            </div>
+
+            <div >
+                <img class="logoBJ" src="BalkanJRLogo.jpg" alt="">
             </div>
         </div>
     </div>
 
-
-
-    <!-- footer -->
-    <section>
-        Footer here
-    </section>
+    <div style="color: red; text-align: center;">footer</div>
 </body>
 </html>
