@@ -53,3 +53,10 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+hr.HR_FancyStyle
+{
+border: 0;
+height: 3px;
+background-image: radial-gradient(circle, rgba(33,178,212,1) 0%, rgba(32,153,243,1) 20%, rgba(0,212,255,0) 69%);
+}
