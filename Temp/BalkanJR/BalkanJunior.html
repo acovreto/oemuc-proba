@@ -4,138 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="BalkanJunior.css">
         <!-- google fonts -->
         <section>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />  
           </section>
-
-    <style>
-        :root{
-        --sina: #08a4ac;
-        --portokaleva: #f39520;
-        --matCrna: #252123;
-        }
-
-        *{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        font-family: "Roboto", regular;
-        }
-
-        .pozadina{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 102%;
-        height: 102%;
-        filter: blur(10px);
-        z-index: -10;
-        }
-
-        .CenterText{
-            text-align: center;
-        }
-        .centerDiv{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-        .textDiv{
-            margin: 5% 5%;
-        }
-
-        hr.HR_FancyStyle
-        {
-        border: 0;
-        height: 3px;
-        background-image: radial-gradient(circle, rgba(33,178,212,1) 0%, rgba(32,153,243,1) 20%, rgba(0,212,255,0) 69%);
-        }
-
-        .BJ_ContainerMain{
-            margin-top: 2%;
-            margin-bottom: 2%;
-            position: relative;
-            width: 100%; 
-            height: 245vh;
-        }
-        .BJ_ContainerInner{
-            background-color: white;
-            position: absolute;
-            width: 70%;
-            border-radius: 10px;
-
-            left: 50%;
-            transform: translate(-50%,0);
-        }
-
-        .FlexedGrid{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .FlexedGrid img{
-            margin: 5px;
-            height: 20vh;
-            width: auto;
-            box-shadow: 1px 1px 10px #252123;
-        }
-
-        .flagContainer{
-            position: relative;
-        }
-
-        .FlagImage {
-        filter: blur(0);
-        transition: filter 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-        
-        }
-
-        .FlagText {
-            opacity: 0;
-            transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-
-        .flagContainer:hover .FlagImage {
-            filter: blur(1px) brightness(80%);
-        }
-
-        .flagContainer:hover .FlagText {
-            opacity: 1;
-        }
-
-        .flagParagraphStyles{
-            text-wrap: stable;
-            padding: 20px;
-            color: white; 
-            -webkit-text-stroke: black 1px; 
-            width: 100%; 
-            font-size: xx-large;
-        }
-
-        .logoDiv{
-            position: absolute;
-            width: 100%;
-            height: 200vh;
-        }
-        .logoBJ{
-            position: relative;
-            left: 50%;
-            transform: translate(-50%,0);
-        }
-    </style>
+          <!-- include element -->
+          <section>
+            <script type="module" src='https://unpkg.com/html-include-element'></script>
+          </section>
 </head>
 <body>
     <img src="../CarouselRes/Imgs/Cousel1.png" alt="ОЕМУЦ" class="pozadina">
 
     <!-- navbar -->
     <section style="color: red; text-align: center;">
-        Navbar here
+        <html-include src="Navbar here"></html-include>
     </section>
 
     <div class="BJ_ContainerMain"> 
