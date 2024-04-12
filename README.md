@@ -127,7 +127,7 @@ Head:
     <script type="module" src='https://unpkg.com/html-include-element'></script>
   </section>
 ```
-Body
+Body:
 ```html
   <html-include src="Link"></html-include>
 ```
