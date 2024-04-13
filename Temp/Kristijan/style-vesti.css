@@ -1,0 +1,161 @@
+:root{
+    --sina: #08a4ac;
+    --portokaleva: #f39520;
+    --matCrna: #252123;
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.pozadina{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 102%;
+    filter: blur(10px);
+    z-index: -1;
+}   
+
+.sektor{
+    margin-top: 100px;
+    color: var(--portokaleva);
+    border-bottom: 10px solid var(--portokaleva);   
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 50%;
+    border-bottom-width: 20px;
+    display: inline-block;
+    padding: 30px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    transition-property: opacity;
+    transition-duration: 0.3s; 
+    transition-timing-function: ease-out;
+}
+
+.vesti{
+    display: grid;
+    grid-template-rows: 450px; 
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: 450px;
+    grid-auto-columns: 500px;
+    grid-row-gap: 200px;
+    grid-column-gap: 200px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin: 200px;
+    margin-bottom: 250px;
+    margin-top: 100px;
+}
+
+.vest{
+    opacity: 1;/*VAZNO*/
+    background-color: white;
+    padding: 10px;
+    height: 110%;
+    border-radius: 10px;
+    position: relative;
+}
+.vest img{
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+}
+.vest h1{
+    color: var(--portokaleva);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.vest p{
+    word-wrap: break-word;
+    color: black;
+}
+.vest div button{
+    background-color: var(--portokaleva);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+}
+#prikaziPoveke{
+    background-color: var(--portokaleva);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+#prikaziPoveke:hover{
+    background-color: white;
+    color: var(--portokaleva);
+    border: 5px solid var(--portokaleva);
+    padding: 5px;
+}
+.vest.active{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1075px) {
+    .vest p{
+        visibility: hidden;
+    }
+    .vest{
+        height: 100%;
+    }  
+}
+@media only screen and (max-width: 800px) {
+    .vesti{
+        grid-row-gap: 50px;
+        margin-bottom: 50px;
+    }
+    .vest{
+       width: 60%;
+       height: 80%;
+    }
+    .vest img{
+        height: 200px;
+    }
+    .vest h1{
+        font-size: 16px;
+    }
+    .vest div button{
+        font-size: 10px;
+    }
+    #prikaziPoveke{
+        font-size: 15px;
+    }
+}
