@@ -64,12 +64,12 @@ html, body{
 }
 
 .vest{
-    opacity: 1;/*VAZNO*/
     background-color: white;
     padding: 10px;
     height: 110%;
     border-radius: 10px;
     position: relative;
+    opacity: 0;
 }
 .vest img{
     width: 100%;
