@@ -3,14 +3,13 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 10px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: white;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--portokaleva);
-    border-radius: 50px;
 }
