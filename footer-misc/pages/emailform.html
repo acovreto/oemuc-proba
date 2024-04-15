@@ -74,10 +74,33 @@
       input[type="text"] {
         width: 30%;
       }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slidein {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      .animated {
+        animation:
+          fadein 0.5s ease forwards,
+          slidein 0.5s ease forwards;
+      }
     </style>
   </head>
   <body>
-    <div class="epocon">
+    <div class="epocon animated">
       <form action="../sendmail.php" method="post">
         <label class="roboto-regular title" for="name"
           >Испратете ни еписмо</label
