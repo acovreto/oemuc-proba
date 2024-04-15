@@ -1,32 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    text-transform: capitalize;
-    text-decoration: none;
-}
+
 header{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(#fff,rgba(255, 255, 255, 0) );
-    padding: 0px 7%;
+    background-color: white;
+    padding: 0px 3%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     z-index: 1000;
 }
 header .logo{
     width: fit-content;
-    height: auto;
+    height: 100%;
     max-width: 300px;
     max-height: 90px;
 }
+
+header .navbar {
+    margin: 0px;
+}
+
 header .navbar ul{
     list-style: none;
-
+    margin-top: 0px;
 }
 header .navbar ul li{
     position: relative;
@@ -34,7 +33,7 @@ header .navbar ul li{
 }
 header .navbar ul li a{
     font-size: 16px;
-    padding: 20px;
+    padding: 10px;
     color: #252123;
     display: block;
 }
@@ -72,7 +71,7 @@ header label{
 
 @media(max-width:991px){
     header{
-        padding: 20px;
+        padding: 20px 0px;
     }
     header label{
         display: initial;
