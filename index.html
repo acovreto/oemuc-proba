@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="style.css">
 
     <!-- google fonts -->
@@ -34,9 +35,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OEMUC Massum</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- NavBar -->
     <section>
         <header>
@@ -238,14 +243,7 @@
     </div>
     </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-      $(document).ready(function(){
-          $(".clickable-div").click(function(){
-              window.location = $(this).data("href");
-          });
-      });
-  </script>
+
 
   <script src="Temp/navbar/js/navbar2.js"></script>
   <script src="Temp/navbar/js/navbar5.js"></script>
@@ -311,5 +309,13 @@
   </section>
     <!--kraj na footer-->
  
+
+    <script>
+        $(document).ready(function(){
+            $(".clickable-div").click(function(){
+                window.location = $(this).data("href");
+            });
+        });
+    </script>
 </body>
 </html>
