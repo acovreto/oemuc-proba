@@ -24,7 +24,7 @@ html, body{
     width: 102%;
     height: 102%;
     filter: blur(10px);
-    z-index: -10;
+    z-index: -1;
 }
 
 .main{
