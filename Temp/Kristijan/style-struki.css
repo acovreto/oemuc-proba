@@ -114,9 +114,16 @@ html, body{
         margin-bottom: 100px;
         height: 200px;
     }
-    .struka button{
+    .plan{
         left: 50%;
         transform: translateX(-50%);
         text-wrap: nowrap;
+    }
+    .exit{
+        top: 0;
+        right: 0;
+        height: 80px;
+        width: 80px;
+        padding: 0;    
     }
 }
