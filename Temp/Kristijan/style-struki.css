@@ -80,6 +80,13 @@ html, body{
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
 }
+.exit{
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: 80px;
+    padding: 0;    
+}
 .struka a{
     text-decoration: none;
     color: white;

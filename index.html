@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="style.css">
 
     <!-- google fonts -->
@@ -24,17 +25,88 @@
       <link rel="stylesheet" href="../Temp/SponzoriRes/sponzori.css">
     </section>
 
+    <!-- navbar -->
+    <section>
+      <link rel="stylesheet" href="Temp/navbar/navbar-style.css">
+    </section>
     <section>
       <script type="module" src='https://unpkg.com/html-include-element'></script>
     </section>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OEMUC Massum</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
-<body>
+<body style="overflow-x: hidden;">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- NavBar -->
-    <section></section>
+    <section>
+        <header>
+          <a href="index.html" class="logo"><img src="Temp/navbar/logo.png" alt="" style="height: 5vh;"></a>
+      
+          <input type="checkbox" id="menu-bar">
+          <label for="menu-bar"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></label>
+
+      <nav class="navbar">
+          <ul>
+              <li><a href="index.html">Почетна</a></li>
+              <li><a href="#">Струки +</a>
+                  <ul>
+                      <li><a href="Temp/Kristijan/index-elektro.html">Електротехничка Струка</a></li>
+                      <li><a href="Temp/Kristijan/index-masinska.html">Машинска Струка</a></li>
+                      <li><a href="Temp/Kristijan/index-soobrajkanjo.html">Сообраќајна Струка</a></li>
+                      <li><a href="Temp/Kristijan/index-licni-uslugi.html">Лични Услуги</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Настава +</a>
+                  <ul>
+                      <li><a href="Temp/Kristijan/index-rakovoden-tim.html">Раководен Тим</a></li>
+                      <li><a href="Temp/Kristijan/index-strucni-aktivi.html">Стручни Активи</a></li>
+                      <li><a href="Temp/Kristijan/index-administrativen-kadar.html">Административен Кадар</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Вести</a></li>
+              <li><a href="#">Проекти +</a>
+                  <ul>
+                      <li><a href="Temp/BalkanJR/BalkanJunior.html">Балкан Јуниор</a></li>
+                      <li><a href="#">Училишен Спортски Клуб</a></li>
+                      <li><a href="#">Еразмус Проекти +</a>
+                          <ul>
+                              <li><a href="#">DigitalVET</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Е twinning проекти 2023-2024 +</a>
+                          <ul>
+                              <li><a href="#">Water as a source of life</a></li>
+                              <li><a href="#">Interaktivne funkcije u STEM-u</a></li>
+                              <li><a href="#">Let's fight for a better world</a></li>
+                              <li><a href="#">Game not waste</a></li>
+                              <li><a href="#">Be kind, be a role model</a></li>
+                              <li><a href="#">Read what you eat</a></li>
+                              <li><a href="#">NOW (Nature often welcomes) </a></li>
+                              <li><a href="#">Let's shape our dreams with Tinkercad</a></li>
+                              <li><a href="#">The sky is the limit - motivation to learn</a></li>
+                              <li><a href="#">Multidisciplinary STEM Skills</a></li>
+                              <li><a href="#">Are you ready for change?</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Junior Achievement +</a>
+                          <ul>
+                              <li><a href="#">Girls Go Circular</a></li>
+                              <li><a href="#">Училишна Компанија</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="#">Галерија</a></li>
+              <li><a href="#">За Нас</a></li>
+          </ul>
+      </nav>
+  </header>
+    </section>
 
     <!-- Home Page main -->
     <section>
@@ -105,14 +177,14 @@
                 </div>
                 <div class="SD_TextDiv roboto-regular SC_Text">
                     <p class="centerText" style="font-size: x-large;"><b>Електротехничка Струка:</b></p> <br>
-                    <ol>
+                    <ol style="text-align: left;">
                         <li>Техничар за индустриска мехатроника</li>
                         <li>Електротехничар енергетичар</li>
                         <li>Електротехничар за електроника и телекомуникации</li>
                         <li>Електротехничар за компјутерска техника и автоматика</li>
                     </ol> <br>
                     <p class="centerText" style="font-size: x-large;"><b>Профил за тригодишно образование:</b></p>
-                    <ol>
+                    <ol style="text-align: left;">
                         <li>Електротехничар</li>
                         <li>Електротехничар за електронска и телекомуникации</li>
                     </ol>
@@ -126,18 +198,11 @@
                 </div>
                 <div class="SD_TextDiv roboto-regular SC_Text">
                     <p class="centerText" style="font-size: x-large;"><b>Машинска Струка:</b></p> <br>
-                    <ol>
-                        <li>Техничар за индустриска мехатроника</li>
+                    <ol style="text-align: left;">
                         <li>Техничар за производно машинство</li>
                         <li>Машински техничар</li>
-                        <li>Машинско-енергетски техничар</li>
                         <li>Машински техничар за моторни возила</li>
                         <li>Техничар за компјутерско управување</li>
-                    </ol> <br>
-                    <p class="centerText" style="font-size: x-large;"><b>Профил за тригодишно образование:</b></p>
-                    <ol>
-                        <li>Заварувач</li>
-                        <li>Обработувач на метал</li>
                     </ol>
                 </div>
             </div>
@@ -149,7 +214,7 @@
                 </div>
                 <div class="SD_TextDiv roboto-regular SC_Text">
                     <p class="centerText" style="font-size: x-large;"><b>Сообраќајна струка:</b></p> <br>
-                    <ol>
+                    <ol style="text-align: left;">
                         <li>Техничар за патен сообрајќај</li>
                     </ol>
                 </div>
@@ -162,7 +227,7 @@
                 </div>
                 <div class="SD_TextDiv roboto-regular SC_Text">
                     <p class="centerText" style="font-size: x-large;"><b>Лични услуги:</b></p> <br>
-                    <ol>
+                    <ol style="text-align: left;">
                         <li>Техничар за козметичка нега и убавина</li>
                     </ol>
                 </div>
@@ -171,14 +236,7 @@
     </div>
     </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-      $(document).ready(function(){
-          $(".clickable-div").click(function(){
-              window.location = $(this).data("href");
-          });
-      });
-  </script>
+
 
   <script src="Temp/navbar/js/navbar2.js"></script>
   <script src="Temp/navbar/js/navbar5.js"></script>
@@ -219,10 +277,10 @@
              href="https://www.facebook.com/p/O%D0%95%D0%9C%D0%A3%D0%A6-%D0%A1%D0%B2-%D0%9D%D0%B0%D1%83%D0%BC-%D0%9E%D1%85%D1%80%D0%B8%D0%B4%D1%81%D0%BA%D0%B8-%D0%9E%D1%85%D1%80%D0%B8%D0%B4-100045328405548/"
              ><i class="fa-brands fa-facebook"></i>
            </a>
-           <a class="btn btn2" id="btn2"
+           <a class="btn" id="btn1"
              ><i class="fa-solid fa-earth-europe"></i>
            </a>
-           <a class="btn" id="btn1"><i class="fa-solid fa-envelope"></i> </a>
+           <a class="btn" id="btn2"><i class="fa-solid fa-envelope"></i> </a>
            <a class="btn" id="btn3"
              ><i class="fa-solid fa-arrow-right-to-bracket"></i>
            </a>
@@ -244,5 +302,13 @@
   </section>
     <!--kraj na footer-->
  
+
+    <script>
+        $(document).ready(function(){
+            $(".clickable-div").click(function(){
+                window.location = $(this).data("href");
+            });
+        });
+    </script>
 </body>
 </html>

@@ -50,8 +50,25 @@
     font-weight: 900;
     font-style: italic;}
   /* END za fonts */
-::-webkit-scrollbar{
+
+/* ::-webkit-scrollbar{
     display: none;
+} */
+
+:root{
+    --portokaleva: #f39520;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--portokaleva);
 }
 
 hr.HR_FancyStyle

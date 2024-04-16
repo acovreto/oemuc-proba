@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const stvari = document.getElementById("stvari2");
 
   btn1.addEventListener("click", () => {
-    fetch("../footer-misc/pages/emailform.html")
+    fetch("../footer-misc/pages/contactpage.html")
       .then((response) => response.text())
       .then((data) => {
         stvari.innerHTML = data;
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   btn2.addEventListener("click", () => {
-    fetch("../footer-misc/pages/contactpage.html")
+    fetch("../footer-misc/pages/emailform.html")
       .then((response) => response.text())
       .then((data) => {
         stvari.innerHTML = data;
